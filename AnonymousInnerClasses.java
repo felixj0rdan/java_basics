@@ -1,37 +1,37 @@
-
+// TO DEMONSTRATE THE ANONYMOUS INNER CLASS
 public class AnonymousInnerClasses {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		Phone obj = new Phone();
-//		obj.show();
+		// TODO Auto-generated method stub		
 		
-//		Phone obj1 = new SmartPhone();
-//		obj1.show();
-		
-		
-		// Anonymous inner class
+		// Anonymous inner class is used to define abstract methods 
 		Phone phone = new Phone() {
-			public void show() {
-				System.out.println("Call, sms, cam");
+			public void call() {
+				System.out.println("Calling..... (Abstract method)");
 			}
 		};
 		
-		phone.show();
+		phone.call();
 		
-		Phone p = () -> System.out.println("Call using lambda");
-		p.show();
+		
+		// Anonymous inner class can be used to define Interface methods
+		Phone2 p = new Phone2() {
+			public void call() {
+				System.out.println("Calling..... (Interface method)");
+			}
+		};
+		p.call();
 		
 	}
 
 }
 
-//class Phone {
-//	public void show() {
-//		System.out.println("Call");
-//	}
-//}
+// abstract class Phone with method call()
+abstract class Phone {  
+	abstract public void call();
+}
 
-interface Phone {
-	void show();
+// interface Phone2 with method call()
+interface Phone2 {
+	void call();
 }

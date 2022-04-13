@@ -1,12 +1,8 @@
+// TO DEMONSTRATE LAMBDA FUNCTIONS
+
 import java.util.*;
 interface Operator{
 	int operate(int a, int b);
-	default void op(int a) {
-		System.out.println("zero");
-	}
-	default void op2(int a) {
-		System.out.println("zero");
-	}
 }
 public class Lambda {
 
@@ -17,9 +13,11 @@ public class Lambda {
 			list.add(i);
 		
 //		forEach and lamda implementation
-		list.forEach(i -> System.out.println(i)); 
+		list.forEach(i -> System.out.print(i+" ")); 
 		
-//		to define an interface function
+		System.out.println();
+		
+//		to define an interface function lambda function can be used
 		Operator sumObj = (a, b) -> a+b;
 		Operator multObj = (a, b) -> a*b;
 		

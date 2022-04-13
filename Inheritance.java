@@ -1,35 +1,41 @@
+// TO DEMONSTRATE INHERITANCE
 
-public class Inheritance extends B{
+// main class to inherit other classes
+public class Inheritance extends A{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// creating an A class object
 		A aObj = new A();
-		aObj.show();  // A class function
+		aObj.show();  // since the object is A class object, A class method show is executed
 		
+		// creating a B class object
 		B bObj = new B();
-		bObj.show();  // B class function
+		bObj.show();  // since the object is A class object, A class method show() is executed
 		
+		// object created with A object but B class constructor
 		A abObj = new B();
 		abObj.show(); // B class function (overrides)
 		
+		// Inheritance class object
 		Inheritance obj = new Inheritance();
-		obj.show();   // Inheritance class function;
+		obj.show();   // since Inheritance class extends A class, the method show() in A class is executed
 	}
-//	void show() {
-//		System.out.println("Inheritance class function.");
-//	}
 
 }
 
+// super class A
 class A {
-	static void show() {
+	public void show() {
 		System.out.println("A class function.");
 	}
-//	staic vo
 }
 
+
+// B class inherits A class
 class B extends A{
-	static void show() {
+	// method show() in A class get overridden  
+	public void show() {
 		System.out.println("B class funciton.");
 	}
 }
