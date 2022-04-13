@@ -11,7 +11,7 @@ public class StringPool {
 		String a = "cat";
 		String b = new String(a);
 		
-		System.out.println(a==b);
+		System.out.println(a.equals(b));
 
 	}
 
