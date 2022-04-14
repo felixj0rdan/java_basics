@@ -2,7 +2,7 @@
 
 // threads are used to perform actions simultaneously 
 
-public class RUNNABLE {
+public class RnnableExample {
 
 	public static void main(String[] args) {
 

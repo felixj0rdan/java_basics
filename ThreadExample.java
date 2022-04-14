@@ -1,6 +1,6 @@
 // TO IMPLEMENT THREAD CONCEPT IN JAVA
 
-public class THREAD {
+public class ThreadExample {
 
 	public static void main(String[] args) {
 		

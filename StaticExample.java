@@ -1,7 +1,7 @@
 // TO DEMONSTRATE THE USES OF STATIC 
 // class Airplane is used
 
-public class STATIC {
+public class StaticExample {
 
 	public static void main(String[] args) {
 		Airplane plane1 = new Airplane();
